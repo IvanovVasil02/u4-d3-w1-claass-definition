@@ -9,16 +9,18 @@ private ArrayList<Article> elementList = new ArrayList<Article>();
 private int totalCost = 0;
 
 
-public Cart (Object client) {
-  Client clientId = (Client) client;
-  this.clientID = clientId.clientId;
+public Cart (Client client) {
+  this.clientID = client.clientId;
 }
 
-public void setCart (Object article){
-  Article addOfArticle = (Article) article;
-  elementList.add(new Article(addOfArticle.description, addOfArticle.price, addOfArticle.amount));
-  this.totalCost += addOfArticle.price;
+public void setCart (Article article){
+  elementList.add(new Article(article.description, article.price, article.amount));
+  this.totalCost += article.price;
 }
+
+  public int getClientID() {
+    return clientID;
+  }
 
   public ArrayList<Article> getElementList() {
     return elementList;

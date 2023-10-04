@@ -13,9 +13,8 @@ public class Sim {
   public Sim(String phoneNumber){
     this.number = phoneNumber;
   }
-  public void setCall(int availableCredit, Object objCall){
+  public void setCall(int availableCredit, Call call){
     this.availableCredit = this.availableCredit + availableCredit;
-    Call call = (Call) objCall;
 
     List<Object> objList = new ArrayList<Object>(Arrays.asList(callList));
 
