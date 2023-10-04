@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Sim {
-  String number;
-  int availableCredit = 0;
+  private String number;
+  private int availableCredit = 0;
 
   Call[] callList = new Call[0];
 
@@ -37,5 +37,18 @@ public class Sim {
             ", callList=" + Arrays.toString(callList) +
             '}';
   }
+
+  public String getNumber() {
+    return number;
+  }
+
+  public int getAvailableCredit() {
+    return availableCredit;
+  }
+
+  public Call[] getCallList() {
+    return callList;
+  }
+
 }
 

@@ -3,10 +3,10 @@ package marketEntities;
 import java.util.ArrayList;
 
 public class Cart {
- int clientID;
-ArrayList<Article> elementList = new ArrayList<Article>();
+private int clientID;
+private ArrayList<Article> elementList = new ArrayList<Article>();
 
-int totalCost = 0;
+private int totalCost = 0;
 
 
 public Cart (Object client) {
@@ -19,6 +19,14 @@ public void setCart (Object article){
   elementList.add(new Article(addOfArticle.description, addOfArticle.price, addOfArticle.amount));
   this.totalCost += addOfArticle.price;
 }
+
+  public ArrayList<Article> getElementList() {
+    return elementList;
+  }
+
+  public int getTotalCost() {
+    return totalCost;
+  }
 
   @Override
   public String toString() {

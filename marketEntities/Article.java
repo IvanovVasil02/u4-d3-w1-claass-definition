@@ -3,10 +3,10 @@ package marketEntities;
 import java.util.Random;
 
 public class Article {
-  int articleId;
-  String description;
-  int price;
-  int amount;
+  protected int articleId;
+  protected String description;
+  protected int price;
+  public int amount;
 
   public Article (String description, int price, int amount){
     this.description = description;
@@ -15,6 +15,10 @@ public class Article {
     Random rndm = new Random();
     this.articleId = rndm.nextInt(1, 1000);
 
+  }
+
+  public int getArticleId() {
+    return articleId;
   }
 
   @Override
