@@ -6,7 +6,11 @@ public class Client {
  protected int clientId;
   public String nameSurname;
   public String email;
-  public String registrationDate;
+  private String registrationDate;
+
+  public String getRegistrationDate() {
+    return registrationDate;
+  }
 
   public Client (String fullName, String email, String registrationDate){
       this.nameSurname = fullName;
