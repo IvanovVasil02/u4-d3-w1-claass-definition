@@ -13,12 +13,12 @@ public class es2 {
     Call call5 = new Call("5", 25);
     Call call6 = new Call("6", 25);
 
-    sim1.setSim(23, call1);
-    sim1.setSim(10, call2);
-    sim1.setSim(10, call3);
-    sim1.setSim(10, call4);
-    sim1.setSim(10, call5);
-    sim1.setSim(10, call6);
+    sim1.setCall(23, call1);
+    sim1.setCall(10, call2);
+    sim1.setCall(10, call3);
+    sim1.setCall(10, call4);
+    sim1.setCall(10, call5);
+    sim1.setCall(10, call6);
     System.out.println(sim1.toString());
 
   }

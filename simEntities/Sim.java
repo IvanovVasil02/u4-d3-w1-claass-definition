@@ -13,7 +13,7 @@ public class Sim {
   public Sim(String phoneNumber){
     this.number = phoneNumber;
   }
-  public void setSim(int availableCredit, Object objCall){
+  public void setCall(int availableCredit, Object objCall){
     this.availableCredit = this.availableCredit + availableCredit;
     Call call = (Call) objCall;
 
