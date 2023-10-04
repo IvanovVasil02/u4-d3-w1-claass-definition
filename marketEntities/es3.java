@@ -1,3 +1,5 @@
+package marketEntities;
+
 import marketEntities.Article;
 import marketEntities.Cart;
 import marketEntities.Client;
